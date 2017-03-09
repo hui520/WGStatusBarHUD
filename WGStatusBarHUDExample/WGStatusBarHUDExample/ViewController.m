@@ -46,11 +46,11 @@
     [WGStatusHUD showMessage:@"天气不错" image:nil];
 }
 
-
 - (void)back
 {
     NSLog(@"我小灰灰又回来了");
 }
+
 - (void)testFunction
 {
     NSLog(@"版本2.0了，好开心啊");
