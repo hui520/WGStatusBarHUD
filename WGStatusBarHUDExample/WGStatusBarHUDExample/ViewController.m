@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self testFunction];
 }
 
 - (IBAction)success:(id)sender
@@ -39,6 +40,11 @@
 - (IBAction)showMessage
 {
     [WGStatusHUD showMessage:@"天气不错" image:nil];
+}
+
+- (void)testFunction
+{
+    NSLog(@"版本2.0了，好开心啊");
 }
 
 @end
