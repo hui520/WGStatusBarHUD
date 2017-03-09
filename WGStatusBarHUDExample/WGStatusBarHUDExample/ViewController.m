@@ -18,10 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     [self back];
 
     [self testFunction];
+
 
 }
 
