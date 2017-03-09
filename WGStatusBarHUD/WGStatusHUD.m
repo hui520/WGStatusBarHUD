@@ -63,17 +63,6 @@ static NSTimer * timer_;
     button.titleLabel.font = WGTextFont;
     [window_ addSubview:button];
     
-    //定时消失 dispatch 会有问题（eg.点了成功按钮1s后，再点失败按钮，失败样式只会持续1s就消失）
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self hide];
-//    });
-    
-    
-    
-//    NSObject * obj;
-//    [WGStatusHUD cancelPreviousPerformRequestsWithTarget:obj selector:@selector(hide) object:nil];
-//    [obj performSelector:@selector(hide) withObject:nil afterDelay:2.0];
-    
     //创建定时器
     timer_ = [NSTimer scheduledTimerWithTimeInterval:WGMessageDuration target:self selector:@selector(hide) userInfo:nil repeats:NO];
 }
