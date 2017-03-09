@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self back];
 }
 
 - (IBAction)success:(id)sender
@@ -39,6 +40,11 @@
 - (IBAction)showMessage
 {
     [WGStatusHUD showMessage:@"天气不错" image:nil];
+}
+
+- (void)back
+{
+    NSLog(@"我小灰灰又回来了");
 }
 
 @end
